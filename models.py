@@ -13,6 +13,12 @@ _ACT_REF_01_CHOICES = (
     ('1', 'think it through.'),
 )
 
+INT_MLECTUREBOOK_CHOICES = (
+    ('0', 'none'),
+    ('1', 'hw'),
+    ('2', 'both'),
+)
+
 INT_SNS_INT_08_CHOICES = (
     ('-1', 'master one way of doing it.'),
     ('1', 'come up with new ways of doing it.'),
@@ -337,10 +343,24 @@ CINT_GPA_CHOICES = (
     ('40', '4.0'),
 )
 
-INT_MLECTUREBOOK_CHOICES = (
-    ('0', 'none'),
-    ('1', 'hw'),
-    ('2', 'both'),
+SLEEP_HOURS_CHOICES = (
+    ('20', '2.0'),
+    ('25', '2.5'),
+    ('30', '3.0'),
+    ('35', '3.5'),
+    ('40', '4.0'),
+    ('45', '4.5'),
+    ('50', '5.0'),
+    ('55', '5.5'),
+    ('60', '6.0'),
+    ('65', '6.5'),
+    ('70', '7.0'),
+    ('75', '7.5'),
+    ('80', '8.0'),
+    ('85', '8.5'),
+    ('90', '9.0'),
+    ('95', '9.5'),
+    ('100', '10.0'),
 )
 
 INT_MTEXTBOOK_CHOICES = (
@@ -530,6 +550,7 @@ class Source1(SubjectData):
     Final_Course_Letter_Grade = models.CharField(max_length=20, null=True, blank=True)
     Method_1_Grade = models.FloatField(null=True, blank=True)
     Method_2_Grade = models.FloatField(null=True, blank=True)
+    Tailoring_Level = models.IntegerField(null=True, blank=True)
     Reg_Enrolled = models.IntegerField(null=True, blank=True)
     Reg_GPA = models.FloatField(null=True, blank=True)
     Reg_Gender = models.CharField(max_length=5, null=True, blank=True)
@@ -702,6 +723,7 @@ class Source1(SubjectData):
     ACT_REF_11 = models.IntegerField(null=True, blank=True)
     SNS_INT_11 = models.IntegerField(null=True, blank=True)
     VIS_VRB_11 = models.IntegerField(null=True, blank=True)
+    Sleep_Guess = models.IntegerField(null=True, blank=True)
     SEQ_GLO_11 = models.IntegerField(null=True, blank=True)
 
 class EmptySource(SubjectData):
