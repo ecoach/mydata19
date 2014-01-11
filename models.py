@@ -8,11 +8,6 @@ from djangotailoring.models import SubjectData
 
 # python ../manage.py makemtsmodel > MODEL.OUT (results go below here)
 
-_ACT_REF_01_CHOICES = (
-    ('-1', 'try it out.'),
-    ('1', 'think it through.'),
-)
-
 INT_MLECTUREBOOK_CHOICES = (
     ('0', 'none'),
     ('1', 'hw'),
@@ -20,88 +15,88 @@ INT_MLECTUREBOOK_CHOICES = (
 )
 
 INT_SNS_INT_08_CHOICES = (
-    ('-1', 'master one way of doing it.'),
-    ('1', 'come up with new ways of doing it.'),
+    ('-2', 'master one way of doing it.'),
+    ('2', 'come up with new ways of doing it.'),
 )
 
 INT_SNS_INT_09_CHOICES = (
-    ('-1', 'sensible.'),
-    ('1', 'imaginative.'),
+    ('-2', 'sensible.'),
+    ('2', 'imaginative.'),
 )
 
 INT_SNS_INT_02_CHOICES = (
-    ('-1', 'that deals with facts and real life situations.'),
-    ('1', 'that deals with ideas and theories.'),
+    ('-2', 'that deals with facts and real life situations.'),
+    ('2', 'that deals with ideas and theories.'),
 )
 
 INT_SEQ_GLO_03_CHOICES = (
-    ('-1', 'I usually work my way to the solutions one step at a time.'),
-    ('1', 'I often just see the solutions but then have to struggle to figure out the steps to get to \r\nthem.'),
+    ('-2', 'I usually work my way to the solutions one step at a time.'),
+    ('2', 'I often just see the solutions but then have to struggle to figure out the steps to get to \r\nthem.'),
 )
 
-INT_ACT_REF_10_CHOICES = (
-    ('-1', 'try it out.'),
-    ('1', 'think it through.'),
+INT_SNS_INT_05_CHOICES = (
+    ('-2', 'certainty.'),
+    ('2', 'theory.'),
 )
 
 INT_ACT_REF_08_CHOICES = (
-    ('-1', 'something I have done.'),
-    ('1', 'something I have thought a lot about.'),
+    ('-2', 'something I have done.'),
+    ('2', 'something I have thought a lot about.'),
 )
 
 INT_VIS_VRB_10_CHOICES = (
-    ('-1', 'watch television.'),
-    ('1', 'read a book.'),
+    ('-2', 'watch television.'),
+    ('2', 'read a book.'),
 )
 
 INT_VIS_VRB_11_CHOICES = (
-    ('-1', 'easily and fairly accurately.'),
-    ('1', 'with difficulty and without much detail.'),
+    ('-2', 'easily and fairly accurately.'),
+    ('2', 'with difficulty and without much detail.'),
 )
 
 INT_SNS_INT_03_CHOICES = (
-    ('-1', 'to learn facts.'),
-    ('1', 'to learn concepts.'),
+    ('-2', 'to learn facts.'),
+    ('2', 'to learn concepts.'),
 )
 
 INT_VIS_VRB_01_CHOICES = (
-    ('-1', 'a picture.'),
-    ('1', 'words.'),
+    ('-2', 'a picture.'),
+    ('2', 'words.'),
 )
 
 INT_VIS_VRB_08_CHOICES = (
-    ('-1', 'charts or graphs.'),
-    ('1', 'text summarizing the results.'),
+    ('-2', 'charts or graphs.'),
+    ('2', 'text summarizing the results.'),
 )
 
-_ACT_REF_10_CHOICES = (
-    ('-1', 'outgoing.'),
-    ('1', 'reserved.'),
-)
-
-INT_ACT_REF_01_CHOICES = (
-    ('-1', '-1'),
-    ('1', '1'),
+INT_SEQ_GLO_01_CHOICES = (
+    ('-2', 'understand details of a subject but may be fuzzy about its overall structure.'),
+    ('2', 'understand the overall structure but may be fuzzy about details.'),
 )
 
 INT_SEQ_GLO_11_CHOICES = (
-    ('-1', 'think of the steps in the solution process.'),
-    ('1', 'think of possible consequences or applications of the solution in a wide range of areas.'),
+    ('-2', 'think of the steps in the solution process.'),
+    ('2', 'think of possible consequences or applications of the solution in a wide range of areas.'),
 )
 
-INT_SNS_INT_10_CHOICES = (
-    ('-1', 'concrete material (facts, data).'),
-    ('1', 'abstract material (concepts, theories).'),
+INT_ACT_REF_01_CHOICES = (
+    ('-2', 'try it out.'),
+    ('2', 'think it through.'),
 )
 
 INT_ACT_REF_06_CHOICES = (
-    ('-1', 'in a study group.'),
-    ('1', 'alone.'),
+    ('-2', 'in a study group.'),
+    ('2', 'alone.'),
 )
 
 INT_ACT_REF_07_CHOICES = (
-    ('-1', 'try things out.'),
-    ('1', u'think about how I\u2019m going to do it.'),
+    ('-2', 'try things out.'),
+    ('2', u'think about how I\u2019m going to do it.'),
+)
+
+CTEXT_YES_NO_CHOICES = (
+    ('Yes', 'Yes'),
+    ('No', 'No'),
 )
 
 INT_TO_LETTER_EXPECTED_GRADE_CHOICES = (
@@ -117,13 +112,13 @@ INT_TO_LETTER_EXPECTED_GRADE_CHOICES = (
 )
 
 INT_SNS_INT_06_CHOICES = (
-    ('-1', 'careful about the details of my work.'),
-    ('1', 'creative about how to do my work.'),
+    ('-2', 'careful about the details of my work.'),
+    ('2', 'creative about how to do my work.'),
 )
 
 INT_ACT_REF_09_CHOICES = (
-    ('-1', u'have \u201cgroup brainstorming\u201d where everyone contributes ideas.'),
-    ('1', 'brainstorm individually and then come together as a group to compare ideas.'),
+    ('-2', u'have \u201cgroup brainstorming\u201d where everyone contributes ideas.'),
+    ('2', 'brainstorm individually and then come together as a group to compare ideas.'),
 )
 
 INT_EXAM_2_PREP_RESOURCES_CHOICES = (
@@ -141,8 +136,8 @@ INT_EXAM_2_PREP_RESOURCES_CHOICES = (
 )
 
 INT_ACT_REF_02_CHOICES = (
-    ('-1', 'talk about it.'),
-    ('1', 'think about it.'),
+    ('-2', 'talk about it.'),
+    ('2', 'think about it.'),
 )
 
 CTEXT_PARENT_ED_CHOICES = (
@@ -163,14 +158,9 @@ CTEXT_COLLEGE_CHOICES = (
     ('Other', 'Other'),
 )
 
-CTEXT_YES_NO_CHOICES = (
-    ('Yes', 'Yes'),
-    ('No', 'No'),
-)
-
-_SEQ_GLO_10_CHOICES = (
-    ('-1', 'somewhat helpful to me.'),
-    ('1', 'very helpful to me.'),
+INT_SNS_INT_10_CHOICES = (
+    ('-2', 'concrete material (facts, data).'),
+    ('2', 'abstract material (concepts, theories).'),
 )
 
 INT_TO_LETTER_GOAL_GRADE_CHOICES = (
@@ -199,8 +189,8 @@ INT_SUBJECT_INTEREST_CHOICES = (
 )
 
 INT_SEQ_GLO_07_CHOICES = (
-    ('-1', 'focus on details and miss the big picture.'),
-    ('1', 'try to understand the big picture before getting into the details.'),
+    ('-2', 'focus on details and miss the big picture.'),
+    ('2', 'try to understand the big picture before getting into the details.'),
 )
 
 CTEXT_GENDER_CHOICES = (
@@ -209,8 +199,8 @@ CTEXT_GENDER_CHOICES = (
 )
 
 INT_VIS_VRB_05_CHOICES = (
-    ('-1', 'what I see.'),
-    ('1', 'what I hear.'),
+    ('-2', 'what I see.'),
+    ('2', 'what I hear.'),
 )
 
 OPT_OUT_CHOICES = (
@@ -223,8 +213,8 @@ CINT_SEMSESTERS_COMPLETED_CHOICES = (
 )
 
 INT_VIS_VRB_09_CHOICES = (
-    ('-1', 'what they looked like.'),
-    ('1', 'what they said about themselves.'),
+    ('-2', 'what they looked like.'),
+    ('2', 'what they said about themselves.'),
 )
 
 INT_SEMESTER_FREQ_CHOICES = (
@@ -247,18 +237,18 @@ CTEXT_POST_COLLEGE_CHOICES = (
 )
 
 INT_SEQ_GLO_02_CHOICES = (
-    ('-1', 'all the parts, I understand the whole thing.'),
-    ('1', 'the whole thing, I see how the parts fit.'),
+    ('-2', 'all the parts, I understand the whole thing.'),
+    ('2', 'the whole thing, I see how the parts fit.'),
 )
 
 INT_VIS_VRB_04_CHOICES = (
-    ('-1', 'who put a lot of diagrams on the board.'),
-    ('1', 'who spend a lot of time explaining.'),
+    ('-2', 'who put a lot of diagrams on the board.'),
+    ('2', 'who spend a lot of time explaining.'),
 )
 
-INT_SNS_INT_05_CHOICES = (
-    ('-1', 'certainty.'),
-    ('1', 'theory.'),
+INT_ACT_REF_10_CHOICES = (
+    ('-2', 'try it out.'),
+    ('2', 'think it through.'),
 )
 
 INT_YES_NO_CHOICES = (
@@ -280,8 +270,8 @@ TEXT_OPT_OUT_CHOICES = (
 )
 
 INT_ACT_REF_04_CHOICES = (
-    ('-1', 'I have usually gotten to know many of the students.'),
-    ('1', 'I have rarely gotten to know many of the students.'),
+    ('-2', 'I have usually gotten to know many of the students.'),
+    ('2', 'I have rarely gotten to know many of the students.'),
 )
 
 INT_TRUE_FALSE_CHOICES = (
@@ -290,8 +280,8 @@ INT_TRUE_FALSE_CHOICES = (
 )
 
 INT_ACT_REF_03_CHOICES = (
-    ('-1', 'jump in and contribute ideas.'),
-    ('1', 'sit back and listen.'),
+    ('-2', 'jump in and contribute ideas.'),
+    ('2', 'sit back and listen.'),
 )
 
 CTEXT_INVOLVED_IN_CHOICES = (
@@ -305,18 +295,18 @@ CTEXT_INVOLVED_IN_CHOICES = (
 )
 
 INT_VIS_VRB_07_CHOICES = (
-    ('-1', 'the picture.'),
-    ('1', 'what the instructor said about it.'),
+    ('-2', 'the picture.'),
+    ('2', 'what the instructor said about it.'),
 )
 
 INT_VIS_VRB_06_CHOICES = (
-    ('-1', 'a map.'),
-    ('1', 'written instructions.'),
+    ('-2', 'a map.'),
+    ('2', 'written instructions.'),
 )
 
 INT_ACT_REF_05_CHOICES = (
-    ('-1', 'start working on the solution immediately.'),
-    ('1', 'try to fully understand the problem first.'),
+    ('-2', 'start working on the solution immediately.'),
+    ('2', 'try to fully understand the problem first.'),
 )
 
 CINT_GPA_CHOICES = (
@@ -370,18 +360,18 @@ INT_MTEXTBOOK_CHOICES = (
 )
 
 INT_VIS_VRB_03_CHOICES = (
-    ('-1', 'look over the pictures and charts carefully.'),
-    ('1', 'focus on the written text.'),
+    ('-2', 'look over the pictures and charts carefully.'),
+    ('2', 'focus on the written text.'),
 )
 
 INT_SEQ_GLO_06_CHOICES = (
-    ('-1', u'at a fairly regular pace. If I study hard, I\u2019ll \u201cget it.\u201d'),
-    ('1', u'in fits and starts. I\u2019ll be totally confused and then suddenly it all \u201cclicks.\u201d'),
+    ('-2', u'at a fairly regular pace. If I study hard, I\u2019ll \u201cget it.\u201d'),
+    ('2', u'in fits and starts. I\u2019ll be totally confused and then suddenly it all \u201cclicks.\u201d'),
 )
 
 INT_SNS_INT_07_CHOICES = (
-    ('-1', 'clearly say what they mean.'),
-    ('1', 'say things in creative, interesting ways.'),
+    ('-2', 'clearly say what they mean.'),
+    ('2', 'say things in creative, interesting ways.'),
 )
 
 CTEXT_EMPLOYMENT_STATUS_CHOICES = (
@@ -391,8 +381,8 @@ CTEXT_EMPLOYMENT_STATUS_CHOICES = (
 )
 
 INT_SNS_INT_01_CHOICES = (
-    ('-1', 'realistic.'),
-    ('1', 'innovative.'),
+    ('-2', 'realistic.'),
+    ('2', 'innovative.'),
 )
 
 CTEXT_COLLEGE_CONCENTRATE_CHOICES = (
@@ -415,18 +405,18 @@ CTEXT_COLLEGE_CONCENTRATE_CHOICES = (
 )
 
 INT_SEQ_GLO_04_CHOICES = (
-    ('-1', 'I think of the incidents and try to put them together to figure out the themes.'),
-    ('1', 'I just know what the themes are when I finish reading and then I have to go back and find \r\nthe incidents that demonstrate them.'),
+    ('-2', 'I think of the incidents and try to put them together to figure out the themes.'),
+    ('2', 'I just know what the themes are when I finish reading and then I have to go back and find \r\nthe incidents that demonstrate them.'),
 )
 
 INT_SEQ_GLO_05_CHOICES = (
-    ('-1', 'lay out the material in clear sequential steps.'),
-    ('1', 'give me an overall picture and relate the material to other subjects.'),
+    ('-2', 'lay out the material in clear sequential steps.'),
+    ('2', 'give me an overall picture and relate the material to other subjects.'),
 )
 
 INT_SNS_INT_11_CHOICES = (
-    ('-1', 'I tend to repeat all my steps and check my work carefully.'),
-    ('1', 'I find checking my work tiresome and have to force myself to do it'),
+    ('-2', 'I tend to repeat all my steps and check my work carefully.'),
+    ('2', 'I find checking my work tiresome and have to force myself to do it'),
 )
 
 TEXT_GTD_CHOICES = (
@@ -441,9 +431,9 @@ INT_EXAM_2_PREP_SIMULATION_CHOICES = (
     ('4', 'Four'),
 )
 
-INT_ACT_REF_11_CHOICES = (
-    ('-1', 'appeals to me.'),
-    ('1', 'does not appeal to me.'),
+INT_SNS_INT_04_CHOICES = (
+    ('-2', 'something that teaches me new facts or tells me how to do something.'),
+    ('2', 'something that gives me new ideas to think about.'),
 )
 
 CTEXT_CLASS_STANDING_CHOICES = (
@@ -473,13 +463,13 @@ TEXT_GENDER_CHOICES = (
 )
 
 INT_SEQ_GLO_08_CHOICES = (
-    ('-1', 'work on (think about or write) the beginning of the paper and progress forward.'),
-    ('1', 'work on (think about or write) different parts of the paper and then order them.'),
+    ('-2', 'work on (think about or write) the beginning of the paper and progress forward.'),
+    ('2', 'work on (think about or write) different parts of the paper and then order them.'),
 )
 
 INT_SEQ_GLO_09_CHOICES = (
-    ('-1', 'stay focused on that subject, learning as much about it as I can.'),
-    ('1', 'try to make connections between that subject and related subjects.'),
+    ('-2', 'stay focused on that subject, learning as much about it as I can.'),
+    ('2', 'try to make connections between that subject and related subjects.'),
 )
 
 INT_INTEREST_AFTER_STATS250_CHOICES = (
@@ -495,8 +485,8 @@ INT_PERMISSION_TO_USE_EXAM_2_SELF_ADVICE_CHOICES = (
 )
 
 INT_SEQ_GLO_10_CHOICES = (
-    ('-1', 'somewhat helpful to me.'),
-    ('1', 'appeals to me.'),
+    ('-2', 'somewhat helpful to me.'),
+    ('2', 'appeals to me.'),
 )
 
 CINT_BDAY_MONTH_CHOICES = (
@@ -516,18 +506,13 @@ CINT_BDAY_MONTH_CHOICES = (
 )
 
 INT_VIS_VRB_02_CHOICES = (
-    ('-1', 'pictures, diagrams, graphs, or maps.'),
-    ('1', 'written directions or verbal information.'),
+    ('-2', 'pictures, diagrams, graphs, or maps.'),
+    ('2', 'written directions or verbal information.'),
 )
 
-INT_SEQ_GLO_01_CHOICES = (
-    ('-1', 'understand details of a subject but may be fuzzy about its overall structure.'),
-    ('1', 'understand the overall structure but may be fuzzy about details.'),
-)
-
-INT_SNS_INT_04_CHOICES = (
-    ('-1', 'something that teaches me new facts or tells me how to do something.'),
-    ('1', 'something that gives me new ideas to think about.'),
+INT_ACT_REF_11_CHOICES = (
+    ('-2', 'appeals to me.'),
+    ('2', 'does not appeal to me.'),
 )
 
 INT_MYELLOW_CHOICES = (
@@ -723,8 +708,8 @@ class Source1(SubjectData):
     ACT_REF_11 = models.IntegerField(null=True, blank=True)
     SNS_INT_11 = models.IntegerField(null=True, blank=True)
     VIS_VRB_11 = models.IntegerField(null=True, blank=True)
-    Sleep_Guess = models.IntegerField(null=True, blank=True)
     SEQ_GLO_11 = models.IntegerField(null=True, blank=True)
+    Sleep_Guess = models.IntegerField(null=True, blank=True)
 
 class EmptySource(SubjectData):
     pass
