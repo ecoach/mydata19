@@ -121,18 +121,10 @@ INT_ACT_REF_09_CHOICES = (
     ('2', 'brainstorm individually and then come together as a group to compare ideas.'),
 )
 
-INT_EXAM_2_PREP_RESOURCES_CHOICES = (
-    ('0', 'reviewed the <b>lecture notes</b>'),
-    ('1', 'watched some <b>Blue Review</b> captured lectures'),
-    ('2', 'o reviewed past <b>required HW</b> problems'),
-    ('3', 'reviewed past <b>recommended HW</b> problems'),
-    ('4', 'tried some past exam questions on ,b>Problem Roulette</b>'),
-    ('5', 'o practiced identifying which statistical procedure would be appropriate with <b>Name That Scenario</b>'),
-    ('6', 'attended <b>office hours</b> during exam week'),
-    ('7', 'reviewed some <b>lab materials</b> (ILPs)'),
-    ('8', 'read some parts of the <b>textbook</b>'),
-    ('9', 'discussed material with other students in the class (like <b>study group</b>)'),
-    ('10', 'worked questions from the <b>practice exams</b> (from the lab workbook)'),
+CTEXT_EMPLOYMENT_STATUS_CHOICES = (
+    ('No_Job', 'I do not have a job'),
+    ('Part_Time', 'I work a part-time job (20 hours or less a week)'),
+    ('Full_Time', 'I work a full-time job (more than 20 hours a week)'),
 )
 
 INT_ACT_REF_02_CHOICES = (
@@ -161,17 +153,6 @@ CTEXT_COLLEGE_CHOICES = (
 INT_SNS_INT_10_CHOICES = (
     ('-2', 'concrete material (facts, data).'),
     ('2', 'abstract material (concepts, theories).'),
-)
-
-INT_TO_LETTER_GOAL_GRADE_CHOICES = (
-    ('1', 'C- or lower'),
-    ('2', 'C'),
-    ('3', 'C+'),
-    ('4', 'B-'),
-    ('5', 'B'),
-    ('6', 'B+'),
-    ('7', 'A-'),
-    ('8', 'A or A+'),
 )
 
 INT_SUBJECT_INTEREST_CHOICES = (
@@ -256,6 +237,12 @@ INT_YES_NO_CHOICES = (
     ('1', 'yes'),
 )
 
+INT_PERMISSION_TO_USE_ADVICE_CHOICES = (
+    ('2', 'Yes, you may use my name and picture.'),
+    ('1', 'Yes, you may use my name.'),
+    ('0', 'No, please do not use my name or picture.'),
+)
+
 INT_CONFIDENCE_CHOICES = (
     ('1', 'very doubtful'),
     ('2', 'somewhat doubtful'),
@@ -284,14 +271,22 @@ INT_ACT_REF_03_CHOICES = (
     ('2', 'sit back and listen.'),
 )
 
-CTEXT_INVOLVED_IN_CHOICES = (
-    ('Greek', 'Greek Life (Sororities/Fraternities)'),
-    ('Sports', 'Sports/Club Sports'),
-    ('Religious', 'Religious Organizations'),
-    ('Research', 'Research (Thesis, UROP, Lab work)'),
-    ('Volunteering', 'Volunteering'),
-    ('Music_Art', 'Music/Art'),
-    ('Other', 'Other Student Clubs/Organzations'),
+_ACT_REF_10_CHOICES = (
+    ('-2', 'outgoing.'),
+    ('2', 'reserved.'),
+)
+
+INT_EXAM_PREP_RESOURCES_A_CHOICES = (
+    ('0', 'reviewed the <b>lecture notes</b>'),
+    ('1', 'watched some <b>Blue Review</b> captured lectures'),
+    ('2', 'reviewed past <b>required HW</b> problems'),
+    ('3', 'reviewed past <b>recommended HW</b> problems'),
+    ('4', 'tried some past exam questions on <b>Problem Roulette</b>'),
+    ('6', 'attended <b>office hours</b> during exam week'),
+    ('7', 'reviewed some <b>lab materials</b> (ILPs)'),
+    ('8', 'read some parts of the <b>textbook</b>'),
+    ('9', 'discussed material with other students in the class (like <b>study group</b>)'),
+    ('10', 'worked questions from the <b>practice exams</b> (from the lab workbook)'),
 )
 
 INT_VIS_VRB_07_CHOICES = (
@@ -372,12 +367,6 @@ INT_SEQ_GLO_06_CHOICES = (
 INT_SNS_INT_07_CHOICES = (
     ('-2', 'clearly say what they mean.'),
     ('2', 'say things in creative, interesting ways.'),
-)
-
-CTEXT_EMPLOYMENT_STATUS_CHOICES = (
-    ('No_Job', 'I do not have a job'),
-    ('Part_Time', 'I work a part-time job (20 hours or less a week)'),
-    ('Full_Time', 'I work a full-time job (more than 20 hours a week)'),
 )
 
 INT_SNS_INT_01_CHOICES = (
@@ -472,16 +461,45 @@ INT_SEQ_GLO_09_CHOICES = (
     ('2', 'try to make connections between that subject and related subjects.'),
 )
 
+INT_EXAM_PREP_RESOURCES_B_CHOICES = (
+    ('0', 'reviewed the <b>lecture notes</b>'),
+    ('1', 'watched some <b>Blue Review</b> captured lectures'),
+    ('2', 'reviewed past <b>required HW</b> problems'),
+    ('3', 'reviewed past <b>recommended HW</b> problems'),
+    ('4', 'tried some past exam questions on <b>Problem Roulette</b>'),
+    ('5', 'spent some time practicing with <b>Name That Scenario</b>'),
+    ('6', 'attended <b>office hours</b> during exam week'),
+    ('7', 'reviewed some <b>lab materials</b> (ILPs)'),
+    ('8', 'read some parts of the <b>textbook</b>'),
+    ('9', 'discussed material with other students in the class (like <b>study group</b>)'),
+    ('10', 'worked questions from the <b>practice exams</b> (from the lab workbook)'),
+)
+
+CTEXT_INVOLVED_IN_CHOICES = (
+    ('Greek', 'Greek Life (Sororities/Fraternities)'),
+    ('Sports', 'Sports/Club Sports'),
+    ('Religious', 'Religious Organizations'),
+    ('Research', 'Research (Thesis, UROP, Lab work)'),
+    ('Volunteering', 'Volunteering'),
+    ('Music_Art', 'Music/Art'),
+    ('Other', 'Other Student Clubs/Organzations'),
+)
+
 INT_INTEREST_AFTER_STATS250_CHOICES = (
     ('0', 'taking another statistics course'),
     ('1', 'learning more about majoring or minoring is statistics.'),
     ('2', 'neither (but glad to have finished this statistics course using ECoach).'),
 )
 
-INT_PERMISSION_TO_USE_EXAM_2_SELF_ADVICE_CHOICES = (
-    ('2', 'Yes, you may use my name and picture.'),
-    ('1', 'Yes, you may use my name.'),
-    ('0', 'No, please do not use my name or picture.'),
+INT_TO_LETTER_GOAL_GRADE_CHOICES = (
+    ('1', 'C- or lower'),
+    ('2', 'C'),
+    ('3', 'C+'),
+    ('4', 'B-'),
+    ('5', 'B'),
+    ('6', 'B+'),
+    ('7', 'A-'),
+    ('8', 'A or A+'),
 )
 
 INT_SEQ_GLO_10_CHOICES = (
@@ -613,7 +631,6 @@ class Source1(SubjectData):
     gb_prelab12 = models.IntegerField(null=True, blank=True)
     Exam1_Self_Advice = models.TextField(null=True, blank=True)
     Exam2_Self_Advice = models.TextField(null=True, blank=True)
-    Permission_To_Use_Exam1_Self_Advice = models.IntegerField(null=True, blank=True)
     Permission_To_Use_Exam_2_Self_Advice = models.IntegerField(null=True, blank=True)
     Exam_2_Prep_Resources__0 = models.NullBooleanField()
     Exam_2_Prep_Resources__1 = models.NullBooleanField()
@@ -626,7 +643,18 @@ class Source1(SubjectData):
     Exam_2_Prep_Resources__8 = models.NullBooleanField()
     Exam_2_Prep_Resources__9 = models.NullBooleanField()
     Exam_2_Prep_Resources__10 = models.NullBooleanField()
+    Exam_1_Prep_Resources__0 = models.NullBooleanField()
+    Exam_1_Prep_Resources__1 = models.NullBooleanField()
+    Exam_1_Prep_Resources__2 = models.NullBooleanField()
+    Exam_1_Prep_Resources__3 = models.NullBooleanField()
+    Exam_1_Prep_Resources__4 = models.NullBooleanField()
+    Exam_1_Prep_Resources__6 = models.NullBooleanField()
+    Exam_1_Prep_Resources__7 = models.NullBooleanField()
+    Exam_1_Prep_Resources__8 = models.NullBooleanField()
+    Exam_1_Prep_Resources__9 = models.NullBooleanField()
+    Exam_1_Prep_Resources__10 = models.NullBooleanField()
     Exam_2_Prep_Simulation = models.IntegerField(null=True, blank=True)
+    Exam_1_Prep_Simulation = models.IntegerField(null=True, blank=True)
     GSI_Name = models.CharField(max_length=20, null=True, blank=True)
     dist_values = models.TextField(null=True, blank=True)
     dist_values_after_Exam_2 = models.TextField(null=True, blank=True)
@@ -695,6 +723,7 @@ class Source1(SubjectData):
     SEQ_GLO_07 = models.IntegerField(null=True, blank=True)
     ACT_REF_08 = models.IntegerField(null=True, blank=True)
     SNS_INT_08 = models.IntegerField(null=True, blank=True)
+    Permission_To_Use_Exam_1_Self_Advice = models.IntegerField(null=True, blank=True)
     VIS_VRB_08 = models.IntegerField(null=True, blank=True)
     SEQ_GLO_08 = models.IntegerField(null=True, blank=True)
     ACT_REF_09 = models.IntegerField(null=True, blank=True)
