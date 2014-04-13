@@ -548,6 +548,8 @@ class Source1(SubjectData):
     ECoach_helpful_exam = models.IntegerField(null=True, blank=True)
     ECoach_helpful_most = models.TextField(null=True, blank=True)
     ECoach_would_change = models.TextField(null=True, blank=True)
+    ECoach_why_non_user = models.TextField(null=True, blank=True)
+    ECoach_improve_for_non_user = models.TextField(null=True, blank=True)
     ECoach_favorite_message = models.TextField(null=True, blank=True)
     interest_after_STATS250 = models.IntegerField(null=True, blank=True)
     Final_Course_Letter_Grade = models.CharField(max_length=20, null=True, blank=True)
