@@ -3,7 +3,7 @@
 #export SCRIPT_DIR=$(pwd)
 
 echo 'begin script' 
-cd ~jtritz/bitbucket/ecoach_webapps/mydata19/mts19
+cd ~jtritz/bitbucket/ecoach_webapps/mts/mts19
 svn update
 #svn update -r1445 mts.dictionary
 source ~jtritz/virtualenv/v1/bin/activate
